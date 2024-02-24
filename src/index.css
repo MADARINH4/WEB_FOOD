@@ -9,7 +9,7 @@ body {
   font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(#29251c, #2c2306);
+  background: linear-gradient(#292826, #262135);
   color: #d9e2f1;
   min-height: 100vh;
 }
@@ -38,6 +38,9 @@ body {
 #main-header button {
   font-size: 1.5rem;
   font-family: 'Lato', sans-serif;
+  color: #ffc404;
+  background: none;
+  border: none;
 }
 
 h1 {
@@ -50,7 +53,12 @@ h1 {
   text-transform: uppercase;
 }
 
-#meals {
+.shop {
+  width: 70%;
+  margin: 2rem auto;
+}
+
+#shop {
   width: 90%;
   max-width: 70rem;
   list-style: none;
@@ -61,7 +69,7 @@ h1 {
   gap: 1rem;
 }
 
-.meal-item {
+.product-card {
   background-color: #1d1a16;
   border-radius: 1rem;
   overflow: hidden;
@@ -69,30 +77,47 @@ h1 {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
 }
 
-.meal-item article {
+.product-card article {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.meal-item img {
+.product-card img {
   width: 100%;
   height: 20rem;
   object-fit: cover;
 }
 
-.meal-item h3 {
+.product-card h3 {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 0.75rem 0;
 }
 
-.meal-item-description {
+.product-card button {
+  cursor: pointer;
+  place-items: center;
+  border: 1px solid;
+  background: #1d1a16;
+  color: white;
+  padding: 16px 26px;
+  font-size: 16px;
+  border-radius: 40px;
+}
+
+.product-card button:hover,
+.product-card button:active {
+  background-color: #1d1a16;
+  color: #ffab04;
+}
+
+.product-card-description {
   margin: 1rem;
 }
 
-.meal-item-price {
+.product-card-price {
   display: inline-block;
   background-color: #312c1d;
   color: #ffc404;
@@ -103,7 +128,7 @@ h1 {
   border-radius: 4px;
 }
 
-.meal-item-actions {
+.product-card-actions {
   margin-bottom: 1.5rem;
 }
 
