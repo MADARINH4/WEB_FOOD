@@ -1,15 +1,21 @@
 import ProductCard from './ProductCard';
-import testImg from '../../backend/public/images/beef-tacos.jpg';
-import { useFetch } from '../hooks/useFetch';
-import { fetchShopProducts } from '../http';
+import useHttp from '../hooks/useHttp';
+import Error from './Error';
+
+const requestConfig = {};
 
 export default function Shop() {
   const {
-    isFetching,
+    data: products,
+    isLoading,
     error,
-    fetchedData: products,
-    setFetchedData: setProducts,
-  } = useFetch(fetchShopProducts, []);
+  } = useHttp('http://localhost:3000/meals', requestConfig, []);
+
+  if (isLoading) return <p className="center">Loading...</p>;
+
+  if (error) {
+    return <Error title="Failed to fetch meals" message={error} />;
+  }
 
   return (
     <section className="shop">
@@ -17,6 +23,7 @@ export default function Shop() {
         {products.map((product) => (
           <li key={product.id}>
             <ProductCard
+              id={product.id}
               img={`http://localhost:3000/${product.image}`}
               title={product.name}
               price={product.price}

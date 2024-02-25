@@ -70,6 +70,7 @@ h1 {
 }
 
 .product-card {
+  height: 100%;
   background-color: #1d1a16;
   border-radius: 1rem;
   overflow: hidden;
@@ -201,6 +202,11 @@ h1 {
 .cart-item-actions button:active {
   background-color: #1d1a16;
   color: #ffab04;
+}
+
+.error {
+  text-align: center;
+  color: red;
 }
 
 .control {
