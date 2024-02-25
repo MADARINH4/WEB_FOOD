@@ -1,1 +1,28 @@
-[{"items":[{"id":"m1","name":"Mac & Cheese","price":"8.99","quantity":2},{"id":"m2","name":"Margherita Pizza","price":"12.99","quantity":4},{"id":"m3","name":"Caesar Salad","price":"7.99","quantity":5}],"customer":{"name":"Narlan","email":"n-arlan12@hotmail.com","street":"Palmeira","postal-code":"45345000","city":"Cruz das Almas"},"id":"61.54588464099109"},{"items":[{"id":"m1","name":"Mac & Cheese","price":"8.99","quantity":2},{"id":"m2","name":"Margherita Pizza","price":"12.99","quantity":2}],"customer":{"name":"Narlan","email":"n-arlan12@hotmail.com","street":"R.C, 129","postal-code":"44380-000","city":"Cruz das Almas"},"id":"119.27405107656975"},{"items":[{"id":"m1","name":"Mac & Cheese","price":"8.99","quantity":1}],"customer":{"name":"LOUH4S","email":"n-arlan12@hotmail.com","street":"R.C, 129","postal-code":"44380-000","city":"Cruz das Almas"},"id":"276.47237086633015"},{"items":[{"id":"m1","name":"Mac & Cheese","price":"8.99","quantity":7},{"id":"m2","name":"Margherita Pizza","price":"12.99","quantity":5}],"customer":{"name":"FALA DELE","email":"tassio.unifacs@yahoo.com.br","street":"R.C, 129","postal-code":"44380-000","city":"Cruz das Almas"},"id":"462.5028586758635"},{"items":[{"id":"m3","name":"Caesar Salad","price":"7.99","quantity":1}],"customer":{"name":"PRA FINALIZAR","email":"m4dara.edit@gmail.com","street":"R.C, 129","postal-code":"44380-000","city":"Cruz das Almas"},"id":"993.779993980234"}]
+[
+  {
+    "items": [
+      {
+        "id": "m2",
+        "name": "Margherita Pizza",
+        "price": "12.99",
+        "quantity": 3
+      },
+      { "id": "m1", "name": "Mac & Cheese", "price": "8.99", "quantity": 2 },
+      {
+        "id": "m4",
+        "name": "Spaghetti Carbonara",
+        "price": "10.99",
+        "quantity": 3
+      },
+      { "id": "m3", "name": "Caesar Salad", "price": "7.99", "quantity": 2 }
+    ],
+    "customer": {
+      "name": "Narlan",
+      "email": "n-arlan12@hotmail.com",
+      "street": "Palmeira, Pedro Taváres Cafezeiro, 129",
+      "postal-code": "44380-000",
+      "city": "Cruz das Almas"
+    },
+    "id": "683.6721351891532"
+  }
+]
